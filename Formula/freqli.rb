@@ -5,20 +5,20 @@
 class Freqli < Formula
   desc "Analyze shell history command frequency"
   homepage "https://github.com/Shobhit-Nagpal/freqli"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.0/freqli_Darwin_x86_64.tar.gz"
-      sha256 "84fcfe26e6925715e41f31ba63f3092648e953fb278ecec404c905767d31f91d"
+      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.1/freqli_Darwin_x86_64.tar.gz"
+      sha256 "5742e251f7bb99df1ab4ffcf1140e68bdfa706f0abc626b31c5e77115d235abc"
 
       def install
         bin.install "main"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.0/freqli_Darwin_arm64.tar.gz"
-      sha256 "cfe74878b71efdd110fcea80f94f02faaf107f065a50b378fe0660bcd84cb3a3"
+      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.1/freqli_Darwin_arm64.tar.gz"
+      sha256 "7cac896dbf59609e5089d31f64f51e5e8bde52b703cf31aeab318fcfc6d3ff21"
 
       def install
         bin.install "main"
@@ -28,16 +28,16 @@ class Freqli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.0/freqli_Linux_x86_64.tar.gz"
-      sha256 "1a9fc0599c557b191ef2fb7227edb5d7a06754a1520ef35ff07f8d00414339fb"
+      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.1/freqli_Linux_x86_64.tar.gz"
+      sha256 "906ae2a2533fe14993df56c7e96b6b88cf8ba1c76701c3edff6e7ca00d16d011"
 
       def install
         bin.install "main"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.0/freqli_Linux_arm64.tar.gz"
-      sha256 "d92ce402a7d0c8716066400306f6814ca9cde9243770bc86c4ca99ac4a531e8b"
+      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.1/freqli_Linux_arm64.tar.gz"
+      sha256 "0cad52085972626a9f139ef75c1f2b1ec2591135d7ad6021be4c13826e2a7bc1"
 
       def install
         bin.install "main"
