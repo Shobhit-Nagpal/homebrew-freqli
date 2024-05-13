@@ -5,42 +5,42 @@
 class Freqli < Formula
   desc "Analyze shell history command frequency"
   homepage "https://github.com/Shobhit-Nagpal/freqli"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.1/freqli_Darwin_x86_64.tar.gz"
-      sha256 "5742e251f7bb99df1ab4ffcf1140e68bdfa706f0abc626b31c5e77115d235abc"
+      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.2/freqli_Darwin_x86_64.tar.gz"
+      sha256 "342be34b69f975828256082d23c93cc556124a0ed62e1340fcf0b0833ed0622d"
 
       def install
-        bin.install "main"
+        bin.install "freqli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.1/freqli_Darwin_arm64.tar.gz"
-      sha256 "7cac896dbf59609e5089d31f64f51e5e8bde52b703cf31aeab318fcfc6d3ff21"
+      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.2/freqli_Darwin_arm64.tar.gz"
+      sha256 "2f0846fc17c14e0d29b74dc77c4109065d79552de24d680539654a595e3b2e14"
 
       def install
-        bin.install "main"
+        bin.install "freqli"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.1/freqli_Linux_x86_64.tar.gz"
-      sha256 "906ae2a2533fe14993df56c7e96b6b88cf8ba1c76701c3edff6e7ca00d16d011"
+      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.2/freqli_Linux_x86_64.tar.gz"
+      sha256 "c7990f871a59c91f6c45a57c7eb2aefd1dcdcdccafc6094bb0d73373a58bf9c7"
 
       def install
-        bin.install "main"
+        bin.install "freqli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.1/freqli_Linux_arm64.tar.gz"
-      sha256 "0cad52085972626a9f139ef75c1f2b1ec2591135d7ad6021be4c13826e2a7bc1"
+      url "https://github.com/Shobhit-Nagpal/freqli/releases/download/v1.0.2/freqli_Linux_arm64.tar.gz"
+      sha256 "3a7367e916641aa6acaaad154f8be5ff636d545a3e03b87c8d466781908bf43b"
 
       def install
-        bin.install "main"
+        bin.install "freqli"
       end
     end
   end
